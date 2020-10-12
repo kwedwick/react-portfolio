@@ -27,7 +27,7 @@ function Nav() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>Keegan Wedwick <i className="fa fa-black-tie"></i></Link>
+                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>Keegan Wedwick</Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
                     </div>
@@ -38,8 +38,8 @@ function Nav() {
                         </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/portfolio' className='nav-links' onClick={closeMobileMenu}>
-                                Portfolio
+                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                                Projects
                         </Link>
                         </li>
                         <li className='nav-item'>
@@ -49,7 +49,7 @@ function Nav() {
                         </li>
                             <li>
                                 <Link
-                                    to='contact'
+                                    to='/contact'
                                     className='nav-links-mobile'
                                     onClick={closeMobileMenu}
                                 >

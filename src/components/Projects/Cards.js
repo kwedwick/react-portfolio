@@ -1,21 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { ExternalLink } from 'react-external-link';
 
 function Cards({props}) {
     console.log(props)
     return (
-        <div>
+    
             <li className="cards__item">
-                {/* <Link className="cards__item__link" to={props.path}>
+                <ExternalLink className="cards__item__link" href={props.href}>
                     <figure className="cards__item__pic-wrap" data-category={props.label}>
-                        <img src={props.src} alt="Project One"/>
+                        <img className="card__img" src={props.src} alt={props.alt}/>
                     </figure>
                     <div className="cards__item__info">
-                        <h5 className="cards__item__text">{props.text</h5>
+                        <h5 className="cards__item__text">{props.text}</h5>
                     </div>
-                </Link> */}
+                </ExternalLink>
             </li>
-        </div>
+
     )
 }
 
