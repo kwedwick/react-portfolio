@@ -8,7 +8,7 @@ import Cards from './Cards'
 const projectList = [
     {
         id: '1',
-        src: '../assets/images/tech-blog.jpg',
+        src: '/assets/images/tech-blog.jpg',
         text: 'Placeholder Project',
         label: 'coding language',
         href: "https://blooming-citadel-66585.herokuapp.com/",
@@ -16,7 +16,7 @@ const projectList = [
     },
     {
         id: '2',
-        src: '../assets/images/tech-blog.jpg',
+        src: '/assets/images/tech-blog.jpg',
         text: 'A simple tech blog website that allows the user to sign up, post, and comment.',
         label: 'Node.js',
         href: "https://blooming-citadel-66585.herokuapp.com/",
@@ -24,7 +24,7 @@ const projectList = [
     },
     {
         id: '3',
-        src: '../assets/images/work-day-scheduler.jpg',
+        src: '/assets/images/work-day-scheduler.jpg',
         text: 'A Work Day Scheduler that using jquery and moment.js to check the time and adjusts the class of the hours as the time passes.',
         label: 'Moment.js & Jquery',
         href: "https://kwedwick.github.io/weekday-scheduler/",
@@ -32,7 +32,7 @@ const projectList = [
     },
     {
         id: '4',
-        src: '../assets/images/password-generator.jpg',
+        src: '/assets/images/password-generator.jpg',
         text: 'Random Password Generator using basic JavaScript to take in user input through the form.',
         label: 'JavaScript',
         href: "https://kwedwick.github.io/generate-password-challenge/",
@@ -40,7 +40,7 @@ const projectList = [
     },
     {
         id: '5',
-        src: '../assets/images/pwa-budget-tracker.jpg',
+        src: '/assets/images/pwa-budget-tracker.jpg',
         text: 'A budget tracker that uses basic PWA systems for use offline.',
         label: 'PWA',
         href: "https://protected-bastion-93932.herokuapp.com/",
