@@ -27,7 +27,7 @@ function Nav() {
         <>
             <nav className="navbar">
                 <div className="navbar-container">
-                    <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>Keegan Wedwick</Link>
+                    <Link to="/react-portfolio/" className="navbar-logo" onClick={closeMobileMenu}>Keegan Wedwick</Link>
                     <div className="menu-icon" onClick={handleClick}>
                         <i className={click ? 'fa fa-times' : 'fa fa-bars'} />
                     </div>
@@ -49,7 +49,7 @@ function Nav() {
                         </li>
                             <li>
                                 <Link
-                                    to='/react-portfolio/contact'
+                                    to='/react-portfolio/contact/'
                                     className='nav-links-mobile'
                                     onClick={closeMobileMenu}
                                 >
