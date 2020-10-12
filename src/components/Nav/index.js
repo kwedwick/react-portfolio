@@ -33,23 +33,23 @@ function Nav() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className='nav-item'>
-                            <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/react-portfolio/' className='nav-links' onClick={closeMobileMenu}>
                                 About
                         </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/projects' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/react-portfolio/projects' className='nav-links' onClick={closeMobileMenu}>
                                 Projects
                         </Link>
                         </li>
                         <li className='nav-item'>
-                            <Link to='/resume' className='nav-links' onClick={closeMobileMenu}>
+                            <Link to='/react-portfolio/resume' className='nav-links' onClick={closeMobileMenu}>
                                 Resume
                         </Link>
                         </li>
                             <li>
                                 <Link
-                                    to='/contact'
+                                    to='/react-portfolio/contact'
                                     className='nav-links-mobile'
                                     onClick={closeMobileMenu}
                                 >
