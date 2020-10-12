@@ -332,11 +332,15 @@ h1 {
 }
 
 .contact-container {
+  font-size: 0.5em;
   margin: 10px;
   display: grid;
   grid-gap: 10px 0;
 }
 
+input[type=text], select, textarea {
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
 
 
 /* Footer CSS */

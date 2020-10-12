@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail, capitalizeFirstLetter } from '../../utils/helpers';
+import '../Button/Button.css'
 
 
 function ContactForm() {
@@ -8,6 +9,7 @@ function ContactForm() {
     const [errorMessage, setErrorMessage] = useState('');
 
     function handleChange(e) {
+        const formValue = capitalizeFirstLetter(e.target.name)
         if (e.target.name === 'email') {
             const isValid = validateEmail(e.target.value);
             console.log(isValid);
@@ -19,7 +21,7 @@ function ContactForm() {
             }
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required.`);
+                setErrorMessage(formValue + ' is required.');
             } else {
                 setErrorMessage('');
             }
@@ -39,33 +41,28 @@ function ContactForm() {
         <section className="contact">
             <div className="contact-div">
                 <div className="contact-wrapper">
-                <h1>Contact Me</h1>
-                <form id="contact-form" className="contact-container" onSubmit={handleSubmit}>
-                    {/* name input
-                email input
-                message text area */}
-                    <div>
+                    <h1>Contact Me</h1>
+                    <form id="contact-form" className="contact-container" onSubmit={handleSubmit}>
+
                         <label htmlFor="name">Name:</label>
                         <input type="text" name="name" onBlur={handleChange} defaultValue={formState.name} />
-                    </div>
-                    <div>
+
                         <label htmlFor="email">Email address:</label>
                         <input type="email" name="email" onBlur={handleChange} defaultValue={formState.email} />
-                    </div>
-                    <div>
+
                         <label htmlFor="message">Message:</label>
                         <textarea name="message" row="5" onBlur={handleChange} defaultValue={formState.message} />
-                    </div>
-                    {errorMessage && (
-                        <div>
-                            <p className="error-text">{errorMessage}</p>
-                        </div>
-                    )}
-                    <button type="sumbit" data-testid="formbuttontag">Submit</button>
-                </form>
+
+                        {errorMessage && (
+                            <div>
+                                <p className="error-text">{errorMessage}</p>
+                            </div>
+                        )}
+                        <button type="sumbit" className="btn--outline">Submit</button>
+                    </form>
+                </div>
             </div>
-            </div>
-            
+
 
         </section>
     );
