@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './components/Nav';
-import { HashRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './components/About';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer';
@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className='App'>
-      <Router basename="/">
+      <Router basename="/react-portfolio/">
         <Nav />
         <Switch>
           <Route path='/react-portfolio/' exact component={About}/>
