@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Nav from './components/Nav';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import About from './components/About';
 import Projects from './components/Projects/Projects';
 import Footer from './components/Footer';
