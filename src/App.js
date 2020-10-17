@@ -12,7 +12,7 @@ import Contact from './components/Contact';
 function App() {
   return (
     <div className='App'>
-      <Router>
+      <Router basename="/">
         <Nav />
         <Switch>
           <Route path='/react-portfolio/' exact component={About}/>
