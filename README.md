@@ -1,29 +1,38 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# React Portfolio
 
-## Available Scripts
+## Description
 
-In the project directory, you can run:
+A simple portfolio using React with no backend. Custom made CSS styling to create project cards. At the moment, About Me and Resume sections need to be reworked to include a photo and informaiton - currently using LOREM to populate those pages. Using Hashrouter to allow pages to reload on refresh. Feel free to contribute to help display the resume on the "Resume tab"!
 
-### `npm start`
+A few things on the styling that need to be sorted: same image sizes for a cleaner UI of project cards, resume not displaying pdf, and About Me needs cards. Not able to submit email through Contact.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+You can view the deployed application [here](https://kwedwick.github.io/react-portfolio/#/) and the github [here](https://github.com/kwedwick/react-portfolio). 
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+![Image of completed webpage](public/assets/images/final-screenshot.jpg)
+    
 
-### `npm test`
+## Table of Contents 
+* [Installation](#Installation) 
+* [Usage](#Usage) 
+* [License](#License) 
+* [Questions](#Questions) 
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+## Installation
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+You'll need to install React following their guidelines. The following technologies are used and will need to be imported: gh-pages-deploy, react-dom, react-external-link, react-pdf (currently not working), react-router-dom, and react strap (currently not utilized but maybe later on). 
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Usage
+Run "npm i" to download the packages, you'll be able to add components and route them accordingly. the App.css is currently broken down separately into components rather than all media queiries at the bottom. Will need to adjust or change how the .css file is organized later on. Once you have adjusted and imported your information, you run "npm run deploy" and it'll create the build and push it to the github repo you have designated. 
 
+
+![GitHub license](https://img.shields.io/badge/license-isc-blue.svg)
+## License
+    
+This project falls under the isc license. Please visit [isc](https://choosealicense.com/licenses/isc) to learn more.
+
+
+## Questions
+The author of this project is Keegan. You can reach them via [email](mailto:kwedwick@gmail.com).
+To see more projects from this author, visit their [GitHub](https://github.com/kwedwick).
